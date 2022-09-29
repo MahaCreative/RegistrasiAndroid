@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -46,11 +47,12 @@ public class MahasiswaFragment extends Fragment {
         ViewGroup group = (ViewGroup) inflater.inflate(R.layout.fragment_mahasiswa, container, false);
         rvData = group.findViewById(R.id.rv_mahasiswa);
 //        Setting Layout Managernya
-        lmData = new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false);
+        lmData = new GridLayoutManager(getActivity(), 1);
 
         progressBar = group.findViewById(R.id.progress);
         rvData.setLayoutManager(lmData);
         progressBar.setVisibility(View.VISIBLE);
+
         refreshData("");
         progressBar.setVisibility(View.GONE);
         tv_search = group.findViewById(R.id.tv_search);

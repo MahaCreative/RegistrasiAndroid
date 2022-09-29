@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -62,12 +63,19 @@ public class MahasiswaAdapter extends RecyclerView.Adapter<MahasiswaAdapter.Hold
 
         public HolderData(@NonNull View itemView) {
             super(itemView);
+
             nama = itemView.findViewById(R.id.tv_nama);
             nim = itemView.findViewById(R.id.tv_nim);
             alamat = itemView.findViewById(R.id.tv_alamat);
             telp = itemView.findViewById(R.id.tv_telp);
             avatar = itemView.findViewById(R.id.avatar);
             tvid = itemView.findViewById(R.id.id_mahasiswa);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override public void onClick(View v) {
+                    // item clicked
+                    Toast.makeText(ctx, String.valueOf(nama.getText()), Toast.LENGTH_SHORT).show();
+                }
+            });
         }
     }
 

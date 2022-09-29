@@ -17,7 +17,7 @@ import com.example.registrasimahasiswa.R;
 
 public class DashboardFragment extends Fragment {
 
-    private CardView operator, pengelola;
+    private CardView operator, pengelola, mahasiswa, registrasi;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -32,6 +32,7 @@ public class DashboardFragment extends Fragment {
     private void inisialisasiId(ViewGroup group){
         operator = group.findViewById(R.id.men_operator);
         pengelola = group.findViewById(R.id.men_pengelola);
+        mahasiswa = group.findViewById(R.id.men_mahasiswa);
         setAnimation();
         clickHandler(group);
     }
@@ -41,6 +42,12 @@ public class DashboardFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 gantiFragment(new OperatorFragment());
+            }
+        });
+        mahasiswa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gantiFragment(new MahasiswaFragment());
             }
         });
     }
