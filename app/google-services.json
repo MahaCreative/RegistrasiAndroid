@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "904966680981",
+    "project_id": "registrasi-485ae",
+    "storage_bucket": "registrasi-485ae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:904966680981:android:c65e494d385f7d70e7469c",
+        "android_client_info": {
+          "package_name": "com.example.registrasimahasiswa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "904966680981-ed8k1a6ouv7r6gbh6msss0sjugtu1cje.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.registrasimahasiswa",
+            "certificate_hash": "915d9b7112c1912c9c920155a964fbddb7dbb11d"
+          }
+        },
+        {
+          "client_id": "904966680981-2q1bakblgv497g6f0j93hgdvt15npbq6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfGnVnRpQ1DjwBxNUH1Xs2dfCRR6zQdQc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "904966680981-2q1bakblgv497g6f0j93hgdvt15npbq6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

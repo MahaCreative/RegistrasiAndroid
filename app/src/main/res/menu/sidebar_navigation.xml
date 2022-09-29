@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+    <item android:id="@+id/nav_dashboard"
+        android:icon="@drawable/ic_launcher_background"
+        android:title="Dashboard"/>
+    <item android:id="@+id/nav_operator"
+        android:icon="@drawable/ic_launcher_background"
+        android:title="Operator"/>
+    <item android:id="@+id/nav_mahasiswa"
+        android:icon="@drawable/ic_launcher_background"
+        android:title="Mahasiswa"/>
+
+    <item android:title="Profile">
+        <menu>
+            <item android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_launcher_background"
+                android:title="Profile"/>
+            <item android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_launcher_background"
+                android:title="Logout"/>
+        </menu>
+    </item>
+    <item android:title="Transaksi">
+        <menu>
+            <item android:id="@+id/nav_registrasi"
+                android:icon="@drawable/ic_launcher_background"
+                android:title="Registrasi"/>
+        </menu>
+    </item>
+    <item android:title="History">
+        <menu>
+            <item android:title="History Registrasi"
+                android:id="@+id/nav_history"
+                android:icon="@drawable/ic_launcher_background"/>
+            <item android:title="History Pembayaran"
+                android:id="@+id/nav_history_pembayaran"
+                android:icon="@drawable/ic_launcher_background"/>
+        </menu>
+
+    </item>
+    <item android:id="@+id/nav_berkas"
+        android:icon="@drawable/ic_launcher_background"
+        android:title="Berkas Registrasi"/>
+</menu>
